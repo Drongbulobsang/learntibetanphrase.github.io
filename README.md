@@ -1,1 +1,1 @@
-# learntibetanphrase.github.io
+# ཚིག་དུམ་སློབ་སྦྱོང་།
