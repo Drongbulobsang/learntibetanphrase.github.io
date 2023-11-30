@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>རྒྱབ་སྐྱོར་ཡོད། 2</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+<link rel="stylesheet" type="text/css" href="css/rab-stylesheet.css" />
+
+<script type="text/javascript">
+
+// Audio
+$(window).load(function() {
+
+var pop = Popcorn("#audio");
+
+var timings = [
+];
+
+initAudioTimings(pop, timings);
+});
+
+$(document).ready(function() {
+// Audio start and stop times
+var startTime = -0;
+var stopTime  = 0;
+
+var audio = document.getElementById("audio");
+audio.addEventListener('canplaythrough', function() {
+   if (this.currentTime < startTime) {
+      this.currentTime = startTime;
+   }
+});
+
+audio.addEventListener('timeupdate', function() {
+   if (this.currentTime > stopTime) {
+      this.pause();
+      this.currentTime = startTime;
+   }
+});
+
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 3 }];
+var hasIntro = false;
+var baseRef  = "07-B007-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="content">
+<img src="images/LTP04_06.png" />
+
+<div class="m">🔊 ཡི་གེའི་སྟེང་ལ་བསྣུན་ནས་སྒྲ་ལ་ཉོན།</div>
+<div class="m"><audio id="audio001" src="audio/LTP04_02.mp3" preload="auto"></audio><a href="#" onClick="document.getElementById('audio001').play();" class="audio-link">ཡི་རང་གྲངས་མེད་ཀྱི་སྒོ་ནས་དགའ་བསུ་ཞུ།</a></div>
+<div class="m"><audio id="audio002" src="audio/LTP04_03.mp3" preload="auto"></audio><a href="#" onClick="document.getElementById('audio002').play();" class="audio-link">རྒྱབ་སྐྱོར་ཡོད།</a></div>
+<div class="m"><audio id="audio003" src="audio/LTP04_03.mp3" preload="auto"></audio><a href="#" onClick="document.getElementById('audio003').play();" class="audio-link">དངོས་གནས་ཡག་པོ་བྲིས་འདུག</a></div>
+<div class="m"><audio id="audio004" src="audio/LTP04_03.mp3" preload="auto"></audio><a href="#" onClick="document.getElementById('audio004').play();" class="audio-link">ང་ཚོས་ནམ་ཡང་ཁྱེད་ཉིད་བརྗེད་ཀི་མེད།</a></div>
+<div class="m"><audio id="audio005" src="audio/LTP04_03.mp3" preload="auto"></audio><a href="#" onClick="document.getElementById('audio005').play();" class="audio-link">ཁྱེད་ནམ་ཡང་རི་བོ་བཞིན་བརྟན་དགོས།</a></div>
+<div class="m"><audio id="audio006" src="audio/LTP04_03.mp3" preload="auto"></audio><a href="#" onClick="document.getElementById('audio006').play();" class="audio-link">བླ་མ་མཁྱེན་ནོ།</a></div>
+<div class="m"><audio id="audio007" src="audio/LTP04_03.mp3" preload="auto"></audio><a href="#" onClick="document.getElementById('audio007').play();" class="audio-link">ཕ་ཤུལ་བུ་མོས་ཟིན་པར་ཤོག</a></div>
+</div>
+
+<div id="toolbar-bottom">
+<div class="audio-player">
+  <audio id="audio" controls>
+    <source id="audio1" src="file://C:/github/learntibphrases/audio/LTP04_01.mp3" />
+  </audio>
+</div>
+</div>
+
+</body>
+</html>

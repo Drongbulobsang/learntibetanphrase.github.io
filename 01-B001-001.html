@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>བཀྲ་ཤིས་བདེ་ལེགས། 1</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+<link rel="stylesheet" type="text/css" href="css/rab-stylesheet.css" />
+
+<script type="text/javascript">
+
+// Audio
+$(window).load(function() {
+
+var pop = Popcorn("#audio");
+
+var timings = [
+    { label: "a", start: 0.41, end: 2.03 },
+    { label: "b", start: 2.28, end: 4.05 },
+    { label: "c", start: 4.3, end: 6.34 },
+    { label: "d", start: 6.59, end: 8.48 },
+    { label: "e", start: 8.73, end: 11.02 },
+    { label: "f", start: 11.27, end: 13.38 },
+    { label: "g", start: 13.63, end: 23.63 }
+];
+
+initAudioTimings(pop, timings);
+});
+
+$(document).ready(function() {
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 4 }];
+var hasIntro = false;
+var baseRef  = "01-B001-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span id="book-selector">&nbsp;&nbsp;བཀྲ་ཤིས་བདེ་ལེགས།&nbsp;&nbsp;</span>
+<span id="chapter-selector">&nbsp;&nbsp;1&nbsp;&nbsp;</span>
+</div>
+</div>
+
+<div id="content">
+<img src="images/LTP01_01.png" />
+
+<div class="b"></div>
+<div class="b"></div>
+<div class="b">&nbsp;</div><audio id="audio001" src="audio/LTP01_16.mp3" preload="auto"></audio><a href="#" onClick="document.getElementById('audio001').play();" class="audio-link">🔊</a> སྒྲ་ལ་ཉོན།
+<div class="m"><div id="Ta" class="txs">བཀྲ་ཤིས་བདེ་ལེགས།</div></div>
+<div class="m"><div id="Tb" class="txs">རྟེན་འབྲེལ་ཞུ།</div></div>
+<div class="m"><div id="Tc" class="txs">ཐུགས་རྗེ་ཆེ།</div></div>
+<div class="m"><div id="Td" class="txs">བཀའ་དྲིན་ཆེ།</div></div>
+<div class="m"><div id="Te" class="txs">ངོ་མ་བཀའ་དྲིན་ཆེ།</div></div>
+<div class="m"><div id="Tf" class="txs">སྐུ་ཚེ་བརྟན།</div></div>
+<div class="m"><div id="Tg" class="txs">ཨོཾ་མ་ཎི་པདྨེ་ཧཱུྃ།</div></div>
+</div>
+
+<div id="toolbar-bottom">
+<div class="audio-player">
+  <audio id="audio" controls>
+    <source id="audio1" src="file://C:/github/learntibphrases/audio/LTP01_01.mp3" />
+  </audio>
+</div>
+</div>
+
+</body>
+</html>

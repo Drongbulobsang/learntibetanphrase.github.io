@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>རྒྱབ་སྐྱོར་ཡོད། 1</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+<link rel="stylesheet" type="text/css" href="css/rab-stylesheet.css" />
+
+<script type="text/javascript">
+
+// Audio
+$(window).load(function() {
+
+var pop = Popcorn("#audio");
+
+var timings = [
+    { label: "a", start: 0.84, end: 4.86 },
+    { label: "b", start: 5.11, end: 7.64 },
+    { label: "c", start: 7.89, end: 11.22 },
+    { label: "d", start: 11.47, end: 16.42 },
+    { label: "e", start: 16.67, end: 21.16 },
+    { label: "f", start: 21.41, end: 24.32 },
+    { label: "g", start: 24.57, end: 34.57 }
+];
+
+initAudioTimings(pop, timings);
+});
+
+$(document).ready(function() {
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 3 }];
+var hasIntro = false;
+var baseRef  = "07-B007-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="content">
+<img src="images/LTP04_02.png" />
+
+<div class="b"></div>
+<div class="b"></div>
+<div class="b">&nbsp;</div>🔊 སྒྲ་ལ་ཉོན།
+<div class="m"><div id="Ta" class="txs">ཡི་རང་གྲངས་མེད་ཀྱི་སྒོ་ནས་དགའ་བསུ་ཞུ།</div></div>
+<div class="m"><div id="Tb" class="txs">རྒྱབ་སྐྱོར་ཡོད།</div></div>
+<div class="m"><div id="Tc" class="txs">དངོས་གནས་ཡག་པོ་བྲིས་འདུག</div></div>
+<div class="m"><div id="Td" class="txs">ང་ཚོས་ནམ་ཡང་ཁྱེད་ཉིད་བརྗེད་ཀི་མེད།</div></div>
+<div class="m"><div id="Te" class="txs">ཁྱེད་ནམ་ཡང་རི་བོ་བཞིན་བརྟན་དགོས།</div></div>
+<div class="m"><div id="Tf" class="txs">བླ་མ་མཁྱེན་ནོ།</div></div>
+<div class="m"><div id="Tg" class="txs">ཕ་ཤུལ་བུ་མོས་ཟིན་པར་ཤོག</div></div>
+</div>
+
+<div id="toolbar-bottom">
+<div class="audio-player">
+  <audio id="audio" controls>
+    <source id="audio1" src="file://C:/github/learntibphrases/audio/LTP04_01.mp3" />
+  </audio>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ཡག་པོ་འདུག 2</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+<link rel="stylesheet" type="text/css" href="css/rab-stylesheet.css" />
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 4 }];
+var hasIntro = false;
+var baseRef  = "03-B003-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='03-B003-001.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector">&nbsp;&nbsp;ཡག་པོ་འདུག&nbsp;&nbsp;</span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;2&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='03-B003-003.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+<img src="images/LTP02_06.png" />
+
+<div class="m"><audio id="audio001" src="audio/LTP01_17.mp3" preload="auto"></audio><a href="#" onClick="document.getElementById('audio001').play();" class="audio-link">🔊</a> ཚིག་དུམ་རེ་རེའི་སྒང་ལ་བསྣུན་ཏེ་སྒྲ་ལ་ཉོན།</div>
+<div class="m"><audio id="audio002" src="audio/LTP02_02.mp3" preload="auto"></audio><a href="#" onClick="document.getElementById('audio002').play();" class="audio-link">ཡག་པོ་འདུག</a></div>
+<div class="m"><audio id="audio003" src="audio/LTP02_03.mp3" preload="auto"></audio><a href="#" onClick="document.getElementById('audio003').play();" class="audio-link">ཡག་གི།</a></div>
+<div class="m"><audio id="audio004" src="audio/LTP02_04.mp3" preload="auto"></audio><a href="#" onClick="document.getElementById('audio004').play();" class="audio-link">ཡག་པོ་རེད།</a></div>
+<div class="m"><audio id="audio005" src="audio/LTP02_05.mp3" preload="auto"></audio><a href="#" onClick="document.getElementById('audio005').play();" class="audio-link">ངོ་མ་ཡག་གི།</a></div>
+<div class="m"><audio id="audio006" src="audio/LTP02_06.mp3" preload="auto"></audio><a href="#" onClick="document.getElementById('audio006').play();" class="audio-link">དཔེ་ཡག་པོ་འདུག</a></div>
+<div class="m"><audio id="audio007" src="audio/LTP02_07.mp3" preload="auto"></audio><a href="#" onClick="document.getElementById('audio007').play();" class="audio-link">ངོ་མ་ཡག་པོ་རེད།</a></div>
+<div class="m"><audio id="audio008" src="audio/LTP02_08.mp3" preload="auto"></audio><a href="#" onClick="document.getElementById('audio008').play();" class="audio-link">ཧ་ཅང་ཡག་པོ་འདུག</a></div>
+</div>
+</body>
+</html>
